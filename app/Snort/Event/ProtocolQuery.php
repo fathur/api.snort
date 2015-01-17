@@ -60,7 +60,7 @@ class ProtocolQuery extends Query implements EventInterface
 		$this->density 		= $density;
 
 		$this->beginDate 	= $rangeTime['beginDate'];
-		$this->endDate 		= Carbon::now()->timezone("Asia/Jakarta");
+		$this->endDate 		= Carbon::now();
 		$this->formatDate 	= $densityTime['formatDate'];
 	}
 
