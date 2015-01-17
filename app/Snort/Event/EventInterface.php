@@ -11,7 +11,7 @@ interface EventInterface {
 	 * integer; dan s = seconds, m = minutes, h = hours, d = days, 
 	 * i = months, dan y = years. Contoh 4d = 4 hari, 10i = 10 bulan.
 	 * 		
-	 * @param  int 		$total   	Jumlah data yang ditampilkan
+	 * @param  int 		$total   	Jumlah data yang ditampilkan / limit
 	 * @param  string 	$range   	Rentang waktu data yang ditampilkan
 	 * @param  string 	$density 	Kerapatan antara satu data dengan 
 	 *                          	data yang lain saat ditampilkan
@@ -19,18 +19,47 @@ interface EventInterface {
 	public function __construct($total, $range, $density);
 
 	/**
+	 * [getDensisty description]
+	 * @return [type] [description]
+	 */
+	public function getDensisty();
+
+	/**
+	 * [getDensisty description]
+	 * @return [type] [description]
+	 */
+	public function getRange();
+
+	/**
+	 * [getDensisty description]
+	 * @return [type] [description]
+	 */
+	public function getTotal();
+
+	/**
+	 * [getDensisty description]
+	 * @return [type] [description]
+	 */
+	public function setDensisty($density);
+
+	/**
+	 * [getDensisty description]
+	 * @return [type] [description]
+	 */
+	public function setRange($range);
+
+	/**
+	 * [getDensisty description]
+	 * @return [type] [description]
+	 */
+	public function setTotal($total);
+
+	/**
 	 * [getDetailPerItem description]
 	 * @param  [type] $item [description]
 	 * @return [type]       [description]
 	 */
 	public function getDetailPerItem($item);
-
-	/**
-	 * Mendapatkan data query yang sudah di format untuk ditampilkan.
-	 * 		
-	 * @return array 	Formatted data
-	 */
-	public function getFormattedData();
 
 	/**
 	 * Mendapatkan top jumlah event yang terjadi. 
