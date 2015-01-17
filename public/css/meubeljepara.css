@@ -1,0 +1,29 @@
+.main-navigation {
+	margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+	.navbar .main-nav-collapse {	
+		background-color: #CCCCCC;	
+		position: fixed;
+		
+		top: 0;
+		bottom: 0;
+		left: 28% !important;
+		height: auto !important;
+		width: 100%;
+
+		-webkit-transition: left 0.4s;
+		-moz-transition: left 0.4s;
+		-ms-transition: left 0.4s;
+		-o-transition: left 0.4s;
+		transition: left 0.4s;
+	}
+}
+
+.home-carousel {
+	position: fixed;
+	width: 100%;
+	margin-top: 50px;
+}
+
